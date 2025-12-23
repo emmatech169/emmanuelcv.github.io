@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Segun Efeomah | Senior IT Coordinator</title>
+    <style>
+        :root {
+            --primary: #0056b3; /* Professional Blue */
+            --secondary: #2c3e50; /* Dark Slate */
+            --light: #f4f4f4;
+            --white: #ffffff;
+            --text: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--light);
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--secondary);
+            color: var(--white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 { font-size: 1.5rem; }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li { margin-left: 20px; }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: var(--primary);
+            color: var(--white);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--white);
+            margin-bottom: 20px;
+        }
+
+        #hero h2 { font-size: 2.5rem; margin-bottom: 10px; }
+        #hero p { font-size: 1.2rem; margin-bottom: 20px; }
+
+        .btn {
+            display: inline-block;
+            background: var(--white);
+            color: var(--primary);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 3rem 0;
+            background: var(--white);
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h3.section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 3px solid var(--primary);
+            display: inline-block;
+            padding-bottom: 5px;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+        }
+
+        /* About & Skills */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .skill-category h4 { margin-bottom: 10px; color: var(--primary); }
+        .skill-list { list-style: none; margin-bottom: 1rem; }
+        .skill-list li {
+            background: #eee;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+
+        /* Experience Timeline */
+        .job {
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
+            margin-bottom: 2rem;
+        }
+
+        .job h4 { font-size: 1.2rem; color: var(--secondary); }
+        .job .date { color: #666; font-style: italic; margin-bottom: 10px; display: block; }
+        .job ul { margin-left: 20px; }
+
+        /* Projects */
+        .project-card {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        .project-card h4 { color: var(--primary); }
+
+        /* Cover Letter Section */
+        #cover-letter {
+            background: #eef2f5;
+        }
+        .letter-content {
+            background: var(--white);
+            padding: 40px;
+            border: 1px solid #ddd;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        @media(max-width: 768px) {
+            .grid-2 { grid-template-columns: 1fr; }
+            nav ul { display: none; } /* Simplified for mobile */
+            nav h1 { text-align: center; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <h1>Emmanuel Segun Efeomah</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#cover-letter">Cover Letter</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container">
+            <img src="myprofile/images/Emmanuel Efeomah.png" alt="Emmanuel Segun Efeomah" class="profile-image">
+            <h2>Senior IT Coordinator & System Analyst</h2>
+            <p>Cloud Management | Network Infrastructure | Software Development | Cybersecurity</p>
+            <p>Lagos, Nigeria | emmanuelefeomah@gmail.com | 08135133493</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h3 class="section-title">Professional Summary</h3>
+            [cite_start]<p>Experienced Information Technology System Analyst with a proven history in the logistics and supply chain industry[cite: 4, 5]. [cite_start]Skilled in network administration, Windows Server management, and software installation[cite: 5]. [cite_start]Strong IT professional with expertise in cloud management (Microsoft Azure, Google Workspace), data backup, and project management[cite: 6]. [cite_start]Currently pursuing an MSc in Data Science Management[cite: 55].</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h3 class="section-title">Technical Expertise</h3>
+            <div class="grid-2">
+                <div class="skill-category">
+                    <h4>Networking & OS</h4>
+                    <ul class="skill-list">
+                        [cite_start]<li>SD-WAN Migration [cite: 20]</li>
+                        [cite_start]<li>Cisco (CCNA) [cite: 72]</li>
+                        [cite_start]<li>Active Directory & DNS/DHCP [cite: 9]</li>
+                        [cite_start]<li>Windows Server 2012 R2 [cite: 8]</li>
+                        [cite_start]<li>Citrix VPN [cite: 24]</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Cloud & Security</h4>
+                    <ul class="skill-list">
+                        [cite_start]<li>Microsoft Azure Management [cite: 10]</li>
+                        [cite_start]<li>Google Workspace Admin [cite: 10]</li>
+                        [cite_start]<li>IBM Cybersecurity Analyst [cite: 65]</li>
+                        [cite_start]<li>Penetration Testing [cite: 15]</li>
+                        [cite_start]<li>Data Wiping (Blancco) [cite: 23]</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Development & DB</h4>
+                    <ul class="skill-list">
+                        [cite_start]<li>Python & Django [cite: 16]</li>
+                        [cite_start]<li>PHP, MySQL, SQL [cite: 11, 13]</li>
+                        [cite_start]<li>HTML, CSS, JavaScript [cite: 11]</li>
+                        [cite_start]<li>WordPress & Elementor [cite: 11]</li>
+                        [cite_start]<li>API Integration [cite: 34]</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Hardware & Support</h4>
+                    <ul class="skill-list">
+                        [cite_start]<li>CompTIA A+ [cite: 14]</li>
+                        [cite_start]<li>Printer Configuration [cite: 14]</li>
+                        [cite_start]<li>IT Procurement [cite: 22]</li>
+                        [cite_start]<li>CCTV Installation [cite: 45]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h3 class="section-title">Professional Experience</h3>
+            
+            <div class="job">
+                <h4>Senior IT Coordinator | [cite_start]Ocean Network Express [cite: 18]</h4>
+                [cite_start]<span class="date">February 2022 – Present [cite: 18]</span>
+                <ul>
+                    [cite_start]<li>Managed successful migration from MPLS to SD-WAN[cite: 20].</li>
+                    [cite_start]<li>Configure laptops and manage user profiles via Microsoft Azure[cite: 19].</li>
+                    [cite_start]<li>Connected Citrix VPN across offices and deactivated IPv6[cite: 24].</li>
+                    [cite_start]<li>Administer Google Workspace and handle data backups[cite: 21].</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h4>IT Manager | [cite_start]Gravest Financial Services [cite: 25]</h4>
+                [cite_start]<span class="date">May 2021 – February 2022 [cite: 25]</span>
+                <ul>
+                    [cite_start]<li>Managed company servers, website domain, and official emails[cite: 26].</li>
+                    [cite_start]<li>Built the company website and handled IT procurement[cite: 28].</li>
+                    [cite_start]<li>Resolved software/hardware issues for all subsidiaries[cite: 27].</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h4>IT Support Executive | [cite_start]CITITRUST FINANCIAL SERVICES [cite: 30]</h4>
+                [cite_start]<span class="date">May 2019 – February 2021 [cite: 30]</span>
+                <ul>
+                    [cite_start]<li>Collaborated with vendors on API integrations (Java, Python)[cite: 34].</li>
+                    [cite_start]<li>Managed IT procurement and new system setup[cite: 33].</li>
+                    [cite_start]<li>Pioneered the CITITRUST Hub File Management Portal[cite: 48].</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h3 class="section-title">Key Projects</h3>
+            
+            <div class="project-card">
+                [cite_start]<h4>Kazuma Plaza IT Relocation (Ocean Network Express) [cite: 44]</h4>
+                [cite_start]<p>Led the IT relocation, managing the complete setup of servers, network infrastructure, workstations, and CCTV for two floors[cite: 44, 45]. [cite_start]Designed the internal network topology and completed the project in three days without global support[cite: 46].</p>
+            </div>
+
+            <div class="project-card">
+                [cite_start]<h4>E-voucher Management System [cite: 50]</h4>
+                [cite_start]<p>Developed a full management system using Python and Django[cite: 50].</p>
+            </div>
+
+            <div class="project-card">
+                [cite_start]<h4>Credit Go Africa Web & Mobile App [cite: 47]</h4>
+                [cite_start]<p>Oversaw the project management, designed system architectures (API, hardware), and high-level design diagrams[cite: 47, 48].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cover-letter">
+        <div class="container">
+            <h3 class="section-title">Cover Letter</h3>
+            <div class="letter-content">
+                <p><strong>To the Hiring Manager,</strong></p>
+                <br>
+                <p>I am writing to express my enthusiastic interest in joining your team. With over a decade of experience in the IT sector—spanning logistics, supply chain, and financial services—I have developed a robust skillset that bridges the gap between complex network infrastructure, cloud administration, and software development. My current role as Senior IT Coordinator at Ocean Network Express has honed my ability to deliver enterprise-level solutions under pressure.</p>
+                <br>
+                <p>Throughout my career, I have prided myself on technical versatility. I successfully managed the migration of network infrastructure from MPLS to a new SD-WAN environment and daily administer Microsoft Azure and Google Workspace. One of my defining achievements was leading the IT relocation project to Kazuma Plaza, where I oversaw the complete setup of servers and network topology for two floors, completing the project in just three days without global support.</p>
+                <br>
+                <p>Beyond networking, I possess strong programming skills in Python (Django) and PHP, having developed solutions like an E-voucher management system. Currently pursuing my MSc in Data Science Management, I am committed to staying at the forefront of technology.</p>
+                <br>
+                <p>I look forward to the possibility of discussing how my technical background aligns with your goals.</p>
+                <br>
+                <p>Sincerely,</p>
+                <p><strong>Emmanuel Segun Efeomah</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h3>Contact Me</h3>
+            [cite_start]<p>Email: emmanuelefeomah@gmail.com [cite: 2]</p>
+            <p>Phone: 08135133493 | [cite_start]09160707153 [cite: 2]</p>
+            <p>&copy; 2025 Emmanuel Segun Efeomah. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
